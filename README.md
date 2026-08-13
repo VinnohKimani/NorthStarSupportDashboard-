@@ -189,8 +189,4 @@ All commits must follow this strict format:
 | 23 | Docs | Complete Project README.md | Low | ⏳ Pending |
 | 24 | Deployment | Prepare for Deployment / Handoff | Low | ⏳ Pending |
 
-## 📜 License & Acknowledgments
 
-- **Assignment Specifications & Domain Context:** Northstar Retail Co.
-- **Educational Program:** Power Learn Project (PLP) Software Engineering Program
-- **Author:** Vincent Macharia Kimani
