@@ -175,15 +175,15 @@ All commits must follow this strict format:
 | 9 | Backend | Create Stock Search API Endpoint (`/api/stock`) | High | ✅ Done |
 | 10 | Backend | Implement API Error Handling (404, 400, 500) | Medium | ✅ Done |
 | 11 | Backend | Configure Flask-CORS | High | ✅ Done |
-| 12 | Frontend | Set up React Router (Home, Order, Stock) | High | ⏳ Pending |
-| 13 | Frontend | Build Homepage & Navigation UI | Medium | ⏳ Pending |
-| 14 | Frontend | Build Order Lookup Form Component | High | ⏳ Pending |
-| 15 | Frontend | Build Stock Search Form Component | High | ⏳ Pending |
-| 16 | Frontend | Implement Axios/Fetch API Integration | High | ⏳ Pending |
-| 17 | Frontend | Build Order Status Display Component | High | ⏳ Pending |
-| 18 | Frontend | Build Stock Availability Display Component | High | ⏳ Pending |
-| 19 | Frontend | Implement Frontend Error/Loading States | Medium | ⏳ Pending |
-| 20 | Styling | Apply CSS/Styling (Responsive Design) | Medium | ⏳ Pending |
+| 12 | Frontend | Create website homepage | High | ✅ Done |
+| 13 | Frontend | Create Order Status page | High | ✅ Done |
+| 14 | Frontend | Create Stock Availability page | High | ✅ Done |
+| 15 | Frontend | Design navigation between pages | Medium | ✅ Done |
+| 16 | Integration | Connect Order page to backend | High | ✅ Done |
+| 17 | Integration | Connect Stock page to backend | High | ✅ Done |
+| 18 | Integration | Display order results | High | ✅ Done |
+| 19 | Integration | Display stock results | High | ✅ Done |
+| 20 | Styling | Improve UI/readability | Medium | ✅ Done |
 | 21 | Testing | Manual End-to-End Testing (Order Flow) | High | ⏳ Pending |
 | 22 | Testing | Manual End-to-End Testing (Stock Flow) | High | ⏳ Pending |
 | 23 | Docs | Complete Project README.md | Low | ⏳ Pending |
