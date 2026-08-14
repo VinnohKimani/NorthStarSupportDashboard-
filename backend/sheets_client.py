@@ -34,3 +34,25 @@ def get_orders_sheet():
     spreadsheet = client.open_by_key(spreadsheet_id)
 
     return spreadsheet.worksheet("Orders")
+
+
+def get_order_by_id(order_id):
+    """
+    Find an order by order_id and return required order details.
+    """
+
+    sheet = get_orders_sheet()
+
+    orders = sheet.get_all_records()
+
+    for order in orders:
+        if order["order_id"] == order_id:
+            return {
+                "order_id": order["order_id"],
+                "product_name": order["product_name"],
+                "status": order["status"],
+                "last_update": order["last_update"],
+                "expected_delivery": order["expected_delivery"],
+            }
+
+    return None
