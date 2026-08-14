@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/NavBar";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+// App is the layout shell that every page shares.
+// <Outlet /> is the hole that react-router fills with the current page.
+export default function App() {
   return (
-    <div><h1>Welcome to the Reality Revolution</h1></div>
-  )
+    <div className="app">
+      <NavBar />
+      <main className="page">
+        <Outlet />
+      </main>
+      <footer className="footer">
+        <p>Northstar Retail Co. — Self-Service Support (MVP prototype)</p>
+      </footer>
+    </div>
+  );
 }
-
-export default App
