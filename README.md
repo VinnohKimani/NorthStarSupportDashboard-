@@ -164,17 +164,17 @@ All commits must follow this strict format:
 
 | Task # | Module | Task Name | Priority | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | Planning | Define MVP Scope & Requirements | High | ⏳ Pending |
-| 2 | Setup | Initialize GitHub Monorepo | High | ⏳ Pending |
-| 3 | DB Setup | Create Google Sheets Data Store | High | ⏳ Pending |
-| 4 | DB Setup | Configure Google Service Account & APIs | High | ⏳ Pending |
-| 5 | Backend | Initialize Flask Project & Pipenv | High | ⏳ Pending |
-| 6 | Frontend | Initialize Vite React Project | High | ⏳ Pending |
-| 7 | Backend | Implement Google Sheets Connection (`gspread`) | High | ⏳ Pending |
-| 8 | Backend | Create Order Status API Endpoint (`/api/orders/<id>`) | High | ⏳ Pending |
-| 9 | Backend | Create Stock Search API Endpoint (`/api/stock/<id>`) | High | ⏳ Pending |
-| 10 | Backend | Implement API Error Handling (404, 500) | Medium | ⏳ Pending |
-| 11 | Backend | Configure Flask-CORS | High | ⏳ Pending |
+| 1 | Planning | Define MVP Scope & Requirements | High | ✅ Done |
+| 2 | Setup | Initialize GitHub Monorepo | High | ✅ Done |
+| 3 | DB Setup | Create Google Sheets Data Store | High | ✅ Done |
+| 4 | DB Setup | Configure Google Service Account & APIs | High | ✅ Done |
+| 5 | Backend | Initialize Flask Project & Pipenv | High | ✅ Done |
+| 6 | Frontend | Initialize Vite React Project | High | ✅ Done |
+| 7 | Backend | Implement Google Sheets Connection (`gspread`) | High | ✅ Done |
+| 8 | Backend | Create Order Status API Endpoint (`/api/orders/<id>`) | High | ✅ Done |
+| 9 | Backend | Create Stock Search API Endpoint (`/api/stock`) | High | ✅ Done |
+| 10 | Backend | Implement API Error Handling (404, 400, 500) | Medium | ✅ Done |
+| 11 | Backend | Configure Flask-CORS | High | ✅ Done |
 | 12 | Frontend | Set up React Router (Home, Order, Stock) | High | ⏳ Pending |
 | 13 | Frontend | Build Homepage & Navigation UI | Medium | ⏳ Pending |
 | 14 | Frontend | Build Order Lookup Form Component | High | ⏳ Pending |
