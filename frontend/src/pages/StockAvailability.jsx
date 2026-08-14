@@ -40,7 +40,7 @@ export default function StockAvailability() {
   // likely ones and fall back. TODO(task 18): tighten once confirmed.
   const availability = result?.availability ?? result?.status ?? "";
   const quantity = result?.stock_quantity ?? result?.quantity;
-  const inStock = String(availability).toLowerCase() === "available";
+  const inStock = String(availability).toLowerCase() === "in stock";
 
   return (
     <div className="stack">
