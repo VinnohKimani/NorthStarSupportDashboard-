@@ -96,24 +96,12 @@ export default function OrderStatus() {
 
           <dl className="detail-grid">
             <div>
-              <dt>Customer</dt>
-              <dd>{order.customer_name}</dd>
-            </div>
-            <div>
-              <dt>Order date</dt>
-              <dd>{formatDate(order.order_date)}</dd>
-            </div>
-            <div>
               <dt>Expected delivery</dt>
               <dd>
                 {order.expected_delivery
                   ? formatDate(order.expected_delivery)
                   : "Not applicable"}
               </dd>
-            </div>
-            <div>
-              <dt>Product code</dt>
-              <dd>{order.product_id}</dd>
             </div>
           </dl>
 

@@ -12,28 +12,24 @@
 // so we surface the backend's own wording rather than inventing our own.
 // ---------------------------------------------------------------------------
 
+import axios from 'axios';
+
 const BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:5000/api";
 
 // Shared helper: read the response, and turn any non-200 into a thrown Error
 // carrying the backend's message.
 async function request(url) {
-  let res;
   try {
-    res = await fetch(url);
-  } catch {
-    // fetch only rejects when the network itself failed — server down, CORS,
-    // no connection. A 404 does NOT land here.
+    const res = await axios.get(url);
+    return res.data;
+  } catch (err) {
+    if (err.response && err.response.data) {
+      throw new Error(err.response.data.error || "Something went wrong. Please try again shortly.");
+    }
     throw new Error(
       "We can't reach the support service right now. Please check that the backend is running and try again."
     );
   }
-
-  const data = await res.json().catch(() => ({}));
-
-  if (!res.ok) {
-    throw new Error(data.error || "Something went wrong. Please try again shortly.");
-  }
-  return data;
 }
 
 /**
