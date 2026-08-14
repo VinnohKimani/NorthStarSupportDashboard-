@@ -175,15 +175,15 @@ All commits must follow this strict format:
 | 9 | Backend | Create Stock Search API Endpoint (`/api/stock`) | High | ✅ Done |
 | 10 | Backend | Implement API Error Handling (404, 400, 500) | Medium | ✅ Done |
 | 11 | Backend | Configure Flask-CORS | High | ✅ Done |
-| 12 | Frontend | Create website homepage | High | ⏳ Pending |
-| 13 | Frontend | Create Order Status page | High | ⏳ Pending |
-| 14 | Frontend | Create Stock Availability page | High | ⏳ Pending |
-| 15 | Frontend | Design navigation between pages | Medium | ⏳ Pending |
+| 12 | Frontend | Create website homepage | High | ✅ Done |
+| 13 | Frontend | Create Order Status page | High | ✅ Done |
+| 14 | Frontend | Create Stock Availability page | High | ✅ Done |
+| 15 | Frontend | Design navigation between pages | Medium | ✅ Done |
 | 16 | Integration | Connect Order page to backend | High | ✅ Done |
 | 17 | Integration | Connect Stock page to backend | High | ✅ Done |
 | 18 | Integration | Display order results | High | ✅ Done |
 | 19 | Integration | Display stock results | High | ✅ Done |
-| 20 | Styling | Improve UI/readability | Medium | ⏳ Pending |
+| 20 | Styling | Improve UI/readability | Medium | ✅ Done |
 | 21 | Testing | Manual End-to-End Testing (Order Flow) | High | ⏳ Pending |
 | 22 | Testing | Manual End-to-End Testing (Stock Flow) | High | ⏳ Pending |
 | 23 | Docs | Complete Project README.md | Low | ⏳ Pending |
