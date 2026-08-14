@@ -59,3 +59,17 @@ The backend will use the product and size/variation to determine availability.
 Google Sheets is being used as the prototype database because the objective of the sprint is to demonstrate the MVP concept rather than build a production database.
 
 The Google Sheet will act as the source of truth for the prototype data.
+
+## Current Prototype Data
+
+### Orders
+
+The Orders dataset has been populated with 10 sample records for MVP testing.
+
+The records cover different order states including:
+
+- Processing
+- Packaging
+- Shipped
+- In Transit
+- Delivered
