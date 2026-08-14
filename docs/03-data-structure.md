@@ -73,3 +73,13 @@ The records cover different order states including:
 - Shipped
 - In Transit
 - Delivered
+
+### Products
+
+Product and stock records have been created covering:
+
+- Multiple products
+- Multiple sizes/variations
+- Available products
+- Unavailable products
+- Restock dates
