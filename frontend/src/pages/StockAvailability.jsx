@@ -36,10 +36,9 @@ export default function StockAvailability() {
     }
   }
 
-  // The backend's exact field names aren't confirmed yet, so read the most
-  // likely ones and fall back. TODO(task 18): tighten once confirmed.
-  const availability = result?.availability ?? result?.status ?? "";
-  const quantity = result?.stock_quantity ?? result?.quantity;
+  // The backend's exact field names are now confirmed.
+  const availability = result?.status ?? "";
+  const quantity = result?.quantity;
   const inStock = String(availability).toLowerCase() === "in stock";
 
   return (
@@ -96,7 +95,7 @@ export default function StockAvailability() {
         <article className="result-card">
           <div className="result-head">
             <div>
-              <p className="muted small">{result.product_id || "Product"}</p>
+              <p className="muted small">{result.sku || "Product"}</p>
               <h2>{result.product_name || product}</h2>
             </div>
             {availability && <StatusBadge value={availability} />}
@@ -118,8 +117,10 @@ export default function StockAvailability() {
             ) : (
               <p>
                 Out of stock.{" "}
-                {result.restock_date
-                  ? `We expect this size back on ${formatDate(result.restock_date)}.`
+                {result.expected_restock
+                  ? (result.expected_restock.toLowerCase().includes("no restock")
+                      ? result.expected_restock
+                      : `We expect this size back on ${formatDate(result.expected_restock)}.`)
                   : "We don't have a restock date for this size yet."}
               </p>
             )}

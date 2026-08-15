@@ -184,9 +184,9 @@ All commits must follow this strict format:
 | 18 | Integration | Display order results | High | ✅ Done |
 | 19 | Integration | Display stock results | High | ✅ Done |
 | 20 | Styling | Improve UI/readability | Medium | ✅ Done |
-| 21 | Testing | Manual End-to-End Testing (Order Flow) | High | ⏳ Pending |
-| 22 | Testing | Manual End-to-End Testing (Stock Flow) | High | ⏳ Pending |
-| 23 | Docs | Complete Project README.md | Low | ⏳ Pending |
-| 24 | Deployment | Prepare for Deployment / Handoff | Low | ⏳ Pending |
+| 21 | Testing | Manual End-to-End Testing (Order Flow) | High | ✅ Done |
+| 22 | Testing | Manual End-to-End Testing (Stock Flow) | High | ✅ Done |
+| 23 | Docs | Complete Project README.md | Low | ✅ Done |
+| 24 | Deployment | Prepare for Deployment / Handoff | Low | ✅ Done |
 
 
