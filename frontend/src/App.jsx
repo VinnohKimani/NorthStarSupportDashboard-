@@ -11,7 +11,7 @@ export default function App() {
         <Outlet />
       </main>
       <footer className="footer">
-        <p>Northstar Retail Co. — Self-Service Support (MVP prototype)</p>
+        <p>Northstar Retail Co. Self-Service Support</p>
       </footer>
     </div>
   );

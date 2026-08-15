@@ -9,15 +9,14 @@ export default function Home() {
       <section className="hero">
         <h1>How can we help you today?</h1>
         <p className="lede">
-          Get an instant answer without waiting for an agent. Choose what you
-          need below.
+           Choose what you need below.
         </p>
       </section>
 
       <section className="cards" aria-label="Available services">
         <Link to="/order-status" className="card">
           <div className="card-icon" aria-hidden="true">
-            📦
+            
           </div>
           <h2>Where is my order?</h2>
           <p>
@@ -29,18 +28,19 @@ export default function Home() {
 
         <Link to="/stock" className="card">
           <div className="card-icon" aria-hidden="true">
-            📏
+          
           </div>
-          <h2>Is this in my size?</h2>
+          <h2>Is this available in my size?</h2>
           <p>
-            Enter a product and size to check whether it's in stock, and when it's expected back if not.
+            Search for a product and pick a size to check whether it is in stock,
+            and when it is expected back if not.
           </p>
           <span className="card-cta">Check availability →</span>
         </Link>
       </section>
 
       <p className="hint">
-        Still stuck? Our support team is available Mon–Fri, 8am–6pm EAT.
+        Our support team is available Mon–Fri, 8am–6pm EAT.
       </p>
     </div>
   );

@@ -2,9 +2,8 @@ import { useState } from "react";
 import { checkStock } from "../api/supportApi";
 import StatusBadge from "../components/StatusBadge";
 
-// TASK 15 — Stock Search Form.
-// The backend needs BOTH a product and a size, so this is two inputs and
-// one answer — not "search, then pick from a list of sizes".
+// TASK 15 — Stock Search.
+// The backend needs BOTH a product and a size to check stock availability.
 
 export default function StockAvailability() {
   const [product, setProduct] = useState("");
@@ -37,7 +36,7 @@ export default function StockAvailability() {
   }
 
   // The backend's exact field names aren't confirmed yet, so read the most
-  // likely ones and fall back. TODO(task 18): tighten once confirmed.
+  // likely ones and fall back. 
   const availability = result?.availability ?? result?.status ?? "";
   const quantity = result?.stock_quantity ?? result?.quantity;
   const inStock = String(availability).toLowerCase() === "available";
@@ -47,8 +46,7 @@ export default function StockAvailability() {
       <header className="page-head">
         <h1>Check stock availability</h1>
         <p className="lede">
-          Enter the product and the size you want, and we'll tell you if it's in
-          stock.
+          Enter the product and the size you want.
         </p>
       </header>
 

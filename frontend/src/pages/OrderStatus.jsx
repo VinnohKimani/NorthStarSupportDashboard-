@@ -3,8 +3,7 @@ import { lookupOrder } from "../api/supportApi";
 import StatusBadge from "../components/StatusBadge";
 
 // TASK 13 — Order Status page.
-// Definition of done: a customer can enter an Order ID and access the
-// order-status feature.
+//Definition of done: customer can track their order status by entering their Order ID. 
 
 export default function OrderStatus() {
   // --- STATE ---------------------------------------------------------------
@@ -37,8 +36,7 @@ export default function OrderStatus() {
     } catch (err) {
       setError(err.message);
     } finally {
-      // finally runs whether it succeeded or failed — so the spinner
-      // always stops.
+      // runs whether it succeeded or failed
       setLoading(false);
     }
   }
@@ -49,7 +47,7 @@ export default function OrderStatus() {
       <header className="page-head">
         <h1>Track your order</h1>
         <p className="lede">
-          Enter the Order ID from your confirmation email — it looks like{" "}
+          Enter the Order ID from your confirmation email,for example,
           <code>NS1001</code>.
         </p>
       </header>
@@ -72,8 +70,7 @@ export default function OrderStatus() {
       </form>
 
       {/* Conditional rendering: `condition && <thing/>` draws <thing/> only
-          when the condition is true. This is the standard React way to show
-          loading / error / empty / result states. */}
+          when the condition is true. */}
 
       {loading && <p className="muted">Looking up your order…</p>}
 
@@ -127,8 +124,7 @@ export default function OrderStatus() {
   );
 }
 
-// A plain helper function — turns "2026-08-15" into "15 Aug 2026".
-// Not a component, so it lives outside and takes no props.
+// turn "2026-08-15" into "15 Aug 2026".
 function formatDate(iso) {
   if (!iso) return "";
   const d = new Date(iso);
